@@ -18,6 +18,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'meredith-service-connection'
+    azureSubscription: 'meredith-120063023001095'
     appName: 'meredith-120063023001095'
     slotName: staging
