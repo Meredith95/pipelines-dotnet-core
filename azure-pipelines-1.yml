@@ -16,3 +16,8 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'meredith-service-connection'
+    appName: 'meredith-120063023001095'
+    slotName: staging
